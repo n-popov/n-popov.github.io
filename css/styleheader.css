@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    font-family: "Comic Sans MS", sans-serif;
+}
+header {
+    background-color: #7366bd;
+    color: #ffffff;
+    padding: 5px;
+    font-variant: small-caps;
+}
+
+a.navlink:visited,
+a.navlink:hover,
+a.navlink
+{
+    color: #fff0f5;
+    font-variant: small-caps;
+    font-family: "Sitka Heading", serif;
+    font-style: normal;
+    text-decoration: none;
+}
