@@ -7,46 +7,44 @@ h2 {
 .container {
     position: relative;
     text-align: center;
-    color: white;
+    color: #00008b;
     width: 100%;
     padding: 0;
-    margin: 0;
+    margin: 0 0 -5px 0;
 }
 
 img.backgroundpic {
     width: 100%;
     margin: 0;
+    padding: 0;
 }
 .centered {
+    font-family: sans-serif;
     position: absolute;
-    top: 40%;
-    left: 50%;
-    width: 30%;
+    top: 30%;
+    left: 15%;
+    width: 35%;
     height: 10%;
     font-size: 1.5vw;
 }
-.photo {
-    position: absolute;
-    left: 15%;
-    top: 15%;
-    width: 25%;
-    margin: 0;
-}
-.content {
+
+div.centered a {
+    text-decoration: none;
+    font-size: 2vw;
+    font-variant: small-caps;
+    border-radius: 10px;
     background-color: #ffffff;
-    position: absolute;
-    left: 40%;
-    top: 40%;
     color: #7366bd;
+    padding: 2%;
 }
 
-img.myPhoto {
-   width: 100%;
+div.centered a:hover {
+    color: #00008b;
 }
 
 footer {
-    background-color: #d3d3d3;
-    color: #000000;
+    background-color: #191970;
+    color: #e6e6fa;
     margin: 0;
     padding: 0;
 }
@@ -58,12 +56,13 @@ ul.footerul {
     list-style: none;
 }
 a.footerlink {
-    color: #000000;
+    color: #e6e6fa;
     text-decoration: none;
 }
 
 main {
     padding: 0;
+    margin: 0;
     font-size: 100%;
 }
 
