@@ -10,8 +10,8 @@ int main() {
     std::cin >> name;
     std::cout << "Product's price:" << std::endl;
     std::cin >> price;
-    std::cout << "Is cashback available for this product?\n(0 for false, any other number for true)" << std::endl;
-    std::cin >> hasCashback;
+    std::cout << "Is cashback available for this product?\n(true/false)" << std::endl;
+    std::cin >> /* Input your code here.. */  hasCashback;
     std::cout << "Maximum storing temperature:" << std::endl;
     std::cin >> temperature;
 
