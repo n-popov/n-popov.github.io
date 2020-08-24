@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <title>Инструкция</title>
+    <style>
+        img {
+            max-width: 80%;
+        }
+
+        div img {
+            max-width: 100%;
+        }
+        main {
+             margin: 15px;
+         }
+        h1, h2 {
+            text-align: center;
+        }
+        h1 {
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto nav-justified">
+                <li class="nav-item">
+                    <a class="nav-link" href="../work.html">Главная&nbsp;страница<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../cppcourse.html">Задачи</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../lpnt.html">ЛПНТ</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main>
+<p>
+    <h1>Инструкция</h1>
+    <h2>Знакомство с Jira и Bitbucket</h2>
+    При работе с проектами применяются коммерческие продукты компании Atlassian: Jira и BitBucket.
+    Для авторизации необходимо использовать выданные логин и пароль, поменять их на данный момент нельзя.
+    <h3>Jira</h3>
+    <a href="https://jira.lpnt.mipt.ru">Jira</a> — это система управления проектами. Здесь для каждого проекта
+    можно увидеть issues — задачи, поставленные лидером, и прогресс в их решении.
+
+
+    <img src = images/jira.png alt="Jira">
+    <h3>BitBucket</h3>
+    <a href="https://code.lpnt.mipt.ru">Bitbucket</a> позиционируется как аналог GitHub,
+    ориентированный на коммерческие команды разработчиков.
+    Предоставляет полноценный интерфейс для работы с проектом:
+    выполнять clone, fork и предлагать pull request-ы, сравнивать версии,
+    просматривать исходный код, commit-ы, ветки и многое другое.
+
+
+    <img src = images/bb.png alt="Bitbucket">
+    <p>Для работы с BitBucket рекомендован GUI-клиент
+        <a href="https://www.sourcetreeapp.com/">SourceTree</a> в связке с инструментами
+        <a href="https://tortoisegit.org/">Tortoise Git</a>
+        и <a href="https://www.putty.org/">Putty</a>.
+        Также можно обратить внимание на достаточно удобный аналог —
+        <a href="https://www.syntevo.com/smartgit">SmartGit</a>,
+        который не требует установки дополнительных инструментов, в частности, имеет встроенный ssh-клиент.
+
+    <h2>Инструменты для локальной работы</h2>
+    <h3>QT</h3>
+    <p>
+    Данный проект написан при помощи коммерческого фреймворка QT.
+    Для работы с ним потребуется установить как сам QT,
+    так и IDE Qt Creator. Онлайн-установщик доступен
+    <a href="https://www.qt.io/download-open-source">здесь</a></p>
+
+    <img src="images/qtinstall.png" style="max-width: 80%" alt="Install QT">
+    <p>
+    Важно! Нужна open-source версия, так как она бесплатна :) Ссылка выше — именно на её установку.<br/>
+    Минимальный достаточный набор компонент для успешного запуска приложения:</p>
+    <div class="row">
+        <div class="col-md-6 col-lg-4">
+            <img src="images/components1.jpg">
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <img src="images/components2.jpg">
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <img src="images/components3.jpg">
+        </div>
+    </div>
+    <h3>MSVC</h3>
+    Кроме того, необходим набор инструментов разработки
+    <a href="https://visualstudio.microsoft.com/ru/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16">MSVC</a>
+    и именно он, с помощью MinGW запустить проект не получится.
+    Если на компьютере установлена IDE Visual Studio,
+    отдельно его устанавливать не нужно — он есть в комплекте. Приготовьте ещё примерно 4.5 Гб места.
+
+
+    <h2>Подключение проекта</h2>
+
+    <h3>SSH-ключ</h3>
+    <p>
+    Прежде всего необходимо сгенерировать ssh-ключ или использовать уже имеющийся.
+        <a href="https://confluence.atlassian.com/bitbucketserver071/creating-ssh-keys-998653482.html">
+            Необходимая и достаточная инструкция по генерации на английском</a>.
+        Выпишу здесь важные замечания:</p>
+    <ul>
+    <li>нужно, чтобы был установлен Git вместе с Git Bash;</li>
+    <li> при генерации ключа с помощью команды ssh-keygen использование
+        электронного адреса рекомендовано, но не обязательно.</li>
+    </ul>
+<p>В папке пользователя должна появиться папочка .ssh с ключом:</p>
+
+
+    <img src="images/sshfolder.png" alt="SSH Folder">
+
+    <p>
+        Далее, ssh-ключ нужно
+        <a href="https://confluence.atlassian.com/bitbucketserver071/ssh-user-keys-for-personal-use-998653487.html">добавить</a>
+        в свои личные ключи.
+    </p>
+<h3>Клонирование</h3>
+    <p>Наконец, всё готово для клонирования!
+    Теперь нужно открыть репозиторий (фактически папочка проекта) на BitBucket, и нажать 'Clone',
+        если при этом воспользоваться опцией 'Clone in SourceTree',
+        то браузер выведет alert с предложением открыть указанную ссылочку..
+        нет, не обязательно через SourceTree, а через приложение,
+        которое по умолчанию обрабатывает протокол ssh на используемом компьютере, например, SmartGit:
+    </p>
+    <img src ="images/cloneb.png" alt="Cloning">
+    <p>
+    Далее при нажатии на 'Next' предложат ввести пароль или кодовое слово, которые были установлены при генерации ключа:
+    </p>
+    <img src="images/clonepass.png" alt="Password">
+    <p>
+    Нажимая 'Next', обращаем внимание на галочку в 'Include submodules':
+        это автоматически добавит <em>сабмодули</em> — дополнительные репозитории,
+        которые подключаются в этот проект извне (т.о.
+        они могут быть использованы в различных проектах без дублирования).
+    </p>
+    <h3>Запуск</h3>
+    <p>
+    Последний рывок: открываем atmos-application.pro через QT Creator (открывается там по умолчанию), внутри выбираем MSVC:
+    </p><img src="images/app.png" alt="App">
+    <p>
+    Далее наверху Сборка -> Запустить qmake, после завершения нажимаем на зелёную стрелочку,
+        видим "завершился с кодом 0" и радуемся :)</p>
+</main>
+</body>
+</html>
