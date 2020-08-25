@@ -6,13 +6,13 @@ int main() {
     int price, temperature;
     bool hasCashback;
     const int RIGHT_WIDTH = 7, LEFT_WIDTH = 20;
-    std::cout << "Product's name:" << std::endl;
+    std::cout << "Product's name: ";
     std::cin >> name;
-    std::cout << "Product's price:" << std::endl;
+    std::cout << "Product's price: ";
     std::cin >> price;
-    std::cout << "Is cashback available for this product?\n(true/false)" << std::endl;
+    std::cout << "Is cash-back available for this product? (true/false) ";
     std::cin >> /* Input your code here.. */  hasCashback;
-    std::cout << "Maximum storing temperature:" << std::endl;
+    std::cout << "Maximum storing temperature: ";
     std::cin >> temperature;
 
     std::cout << '\n' << std::string(15, '*') << " OUTPUT " << std::string(15, '*') << "\n\n";
