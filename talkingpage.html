@@ -18,10 +18,21 @@
 <main>
     <h1>Говорящая страница</h1>
     <p>На самом деле она не говорит, а пишет.</p>
+    <h2>Список гостей:</h2>
+    <p id="guests"></p>
 </main>
 <script>
-    guestName = prompt("Привет! Как тебя зовут?")
-    alert("Рада познакомиться, " + guestName + "! А я — веб-страница :)")
+    guestName = prompt("Привет! Как тебя зовут?");
+    alert("Рада познакомиться, " + guestName + "! А я — веб-страница :)");
+    if (typeof guestName === 'string') {
+        answer = prompt("Хочешь, я запишу тебя во временный список гостей?\nОтветь " +
+            "'Да', а если не хочешь - что нибудь другое..");
+        if (answer === 'Да') {
+            html = document.getElementById("guests").innerHTML;
+            document.getElementById("guests").innerHTML = html.slice(0, html.length - 4) +
+                guestName.replace('<', '&lt;').replace('>', '&gt;') + '<br/></p>';
+        }
+    }
 </script>
 </body>
 </html>
