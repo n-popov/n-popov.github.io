@@ -5,7 +5,6 @@ int main() {
     std::string name;
     int price, temperature;
     bool hasCashback;
-    const int RIGHT_WIDTH = 7, LEFT_WIDTH = 20;
     std::cout << "Product's name: ";
     std::cin >> name;
     std::cout << "Product's price: ";
@@ -15,9 +14,9 @@ int main() {
     std::cout << "Maximum storing temperature: ";
     std::cin >> temperature;
 
-    std::cout << '\n' << std::string(15, '*') << " OUTPUT " << std::string(15, '*') << "\n\n";
+    std::cout << '\n' << "*************** OUTPUT ***************" << "\n\n";
 
-    std::cout << name << std::endl;
+    std::cout << name << '\n';
 
     // Input your code here..
 
