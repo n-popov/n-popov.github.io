@@ -6,10 +6,16 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <title>ЛПНТ</title>
     <style>
+        img {
+            max-width: 80%;
+        }
+
+        div img {
+            max-width: 95%;
+        }
         main {
-            margin: 15px;
+            margin: 12px;
         }
         h1, h2 {
             text-align: center;
@@ -17,7 +23,12 @@
         h1 {
             text-transform: uppercase;
         }
+        p {
+            text-align: justify;
+            font-size: 20px;
+        }
     </style>
+    <title>Построение графиков в MATLAB</title>
 </head>
 <body>
 <header>
@@ -28,24 +39,44 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto nav-justified">
                 <li class="nav-item">
-                    <a class="nav-link" href="work.html">Главная&nbsp;страница<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="../work.html">Главная&nbsp;страница<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="cppcourse.html">Задачи</a>
+                    <a class="nav-link" href="../cppcourse.html">Задачи</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="lpnt.html">ЛПНТ</a>
+                    <a class="nav-link" href="../lpnt.html">ЛПНТ</a>
                 </li>
             </ul>
         </div>
     </nav>
 </header>
 <main>
-    <h1>ЛПНТ</h1>
-    <ol type="I">
-        <li><a href="lpnt/instruction.html">Инструкция по внедрению новичков</a></li>
-        <li><a href="lpnt/matlabcharts.html">Построение графиков в MATLAB</a></li>
-    </ol>
+    <h1>
+        Построение графиков в MATLAB
+    </h1>
+    <h2>
+        Инициализация
+    </h2>
+    <p>Открываем MATLAB и создаём новый скрипт. В новых версиях MATLAB предпочтительнее создать Live Script — файл с расширением
+        .mlx. Сохраняем файл в одну папку с экспериментальными данными.</p>
+    <div class="row">
+        <div class="col-md-4">
+            <img src="images/matlab1.jpg" alt="Matlab 1">
+        </div>
+        <div class="col-md-4">
+            <img src="images/matlab2.jpg" alt="Matlab 2">
+        </div>
+        <div class="col-md-4">
+            <img src="images/matlab3.jpg" alt="Matlab 3">
+        </div>
+    </div>
+    <h2>
+        Написание <a href="resources/Work.mlx">Live-Script-а</a>
+    </h2>
+    <iframe src="Work.html" width="100%" height="1080"></iframe>
 </main>
+
+
 </body>
 </html>
