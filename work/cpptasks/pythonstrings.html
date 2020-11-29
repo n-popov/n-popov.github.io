@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Строки в Python</title>
+    <style>
+        p {
+            text-align: justify;
+        }
+        main {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto nav-justified">
+                <li class="nav-item">
+                    <a class="nav-link" href="../work.html">Главная&nbsp;страница<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../cppcourse.html">Задачи</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../lpnt.html">ЛПНТ</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main>
+    <h1>Строки в Python</h1>
+    <p>
+        Язык Python предоставляет широкие возможности для работы со строками.
+        В частности, методы <a href="https://docs.python.org/3/library/stdtypes.html#str.split">split()</a> и
+        <a href="https://docs.python.org/3/library/stdtypes.html#str.strip">strip()</a>
+        позволяют осуществлять эффективный парсинг данных,
+        метод <a href="https://docs.python.org/3/library/stdtypes.html#str.join">join()</a> &mdash;
+        осуществлять конкатенацию произвольного числа строк через заданный разделитель;
+        методы  <a href="https://docs.python.org/3/library/stdtypes.html#str.lower">lower()</a>,
+        <a href="https://docs.python.org/3/library/stdtypes.html#str.upper">upper()</a>
+        и <a href="https://docs.python.org/3/library/stdtypes.html#str.capitalize">capitalize()</a>
+        &mdash; работать с регистрами,
+        метод <a href="https://docs.python.org/3/library/stdtypes.html#str.translate">translate()</a>
+        &mdash; осуществлять перевод по заданной таблице-словарю.
+    </p>
+    <p>
+        А ещё строку можно умножать на число!
+    </p>
+    <p>
+        Вам предлагается расширить возможности класса std::string в C++. Разработайте класс str, обладающий не только
+        методами std::string, но и некоторыми из следующих:
+    </p>
+    <ol>
+        <li>
+            (3) : Метод split(optional: str) -> std::vector&lt;str&gt; осуществляет разбиение строки по данному разделителю.
+            Если разделитель не задан, то таковыми являются пробельные символы:
+            сам whitespace и символ перевода строки &laquo;\n&raquo;,
+            <br>
+            (+1) : возврата каретки &laquo;\r&raquo;, табуляции &laquo;\t&raquo;
+            вертикальной табуляции &laquo;\v&raquo; и form feed &laquo;\f&raquo;.
+            <br>
+            (+1) : Метод rsplit(optional: str) -> std::vector выполняет аналогичные операции, но справа налево.
+        </li>
+        <li>
+            (2) : Метод strip(optional: str) -> str позволяет убрать переданные ему символы с обоих концов строки,
+            иначе обрезаются пробельные (0 (+1 аналогично 1-му пункту)).
+            <br>
+            (+1) : Аналогично устроены lstrip() и rstrip(), производящие аналогичные действия только с одной из сторон.
+            <br>
+        </li>
+        <li>
+            (1) : Метод join(std::vector&lt;str&gt;) -> str, принимая вектор строк, осуществляет их конкатенацию,
+            перемежая исходной.
+        </li>
+        <li>
+            (1) : Методы lower() -> str, upper() -> str изменяют регистр всех символов строки
+            на верхний и нижний соответственно.
+            <br>
+            (1) : Метод capitalize() -> str переводит в верхний регистр первую букву в каждом слове.
+        </li>
+        <li>
+            (2) : Метод translate(std::vector&lt;std::pair&lt;str, str&gt;&gt;) -> str.
+        </li>
+        <li>
+            (1) : Оператор умножения на натуральное число operator*(unsigned N) -> str, осуществляющий конкатенацию строки
+            с собой N раз.
+        </li>
+    </ol>
+    <p>
+        (3) : Также попробуйте реализовать указанный функционал с помощью паттерна
+        <a href="https://refactoring.guru/ru/design-patterns/decorator">Декоратор</a> (Decorator)
+    </p>
+</main>
+</body>
+</html>
