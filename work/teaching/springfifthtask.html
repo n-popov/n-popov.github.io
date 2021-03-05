@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Пятое задание</title>
+    <style>
+        p {
+            text-align: justify;
+        }
+        main {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto nav-justified">
+                <li class="nav-item">
+                    <a class="nav-link" href="../work.html">Главная&nbsp;страница<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../cppcourse.html">Задачи</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../lpnt.html">ЛПНТ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../teaching.html">Курс&nbsp;по&nbsp;C++</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main>
+    <h1>Задание по пятому семинару</h1>
+    <h2>Лекционные задания</h2>
+    <ol>
+        <li> (16 б.) Пройдите тест по пятой лекции.</li>
+        <li> (10 б.) Решите первую задачу &laquo;Студенты&raquo; из контеста по пятой лекции.</li>
+        <li> (14 б.) Решите вторую задачу &laquo;2d-вектор&raquo; из контеста по пятой лекции.</li>
+        <li> (20 б.) Решите третью задачу &laquo;nd-вектор&raquo; из контеста по пятой лекции.</li>
+    </ol>
+    <h2>Контрольные вопросы</h2>
+    <ol>
+        <li> (10 б.) Какие методы класса std::string Вы можете назвать? </li>
+        <li> (10 б.) Что Вы можете сказать о семантике перемещения в С++? Какая функция применяется для её реализации?</li>
+        <li> (10 б.) Расскажите о возможностях библиотеки filesystem. </li>
+        <li> (10 б.) С помощью каких классов осуществляется ввод и вывод в файлы в C++?</li>
+        <li> (10 б.) Как можно пройтись по вектору без использования численных индексов?</li>
+        <li> (10 б.) С помощью каких функций осуществляются преобразования строк в чисел, чисел в строки? Перевод символов
+        между верхним и нижним регистрами?</li>
+    </ol>
+    <h2>Задачи</h2>
+    <ol>
+        <li> (70 б.) Напишите программу, осуществляющую преобразование и сортировку строк, прочитанных из файла и запись
+            их в другие файлы в соответствии со следующим алгоритмом преобразования:
+            <ol>
+                <li>Удостоверьтесь, что всё слово находится в нижнем регистре. Если нет, приведите. (Осуществите итерацию
+                с помощью range-based for).</li>
+                <li>Осуществите поиск буквы "c". Если буква найдена, замените её на заглавную и отправьте слово в файл "c.txt".</li>
+                <li>Если буква "c" не найдена, проверьте количество символов. Если оно чётное, запишите слово в "even.txt", если же нет &mdash;
+                в "odd.txt". Перед записью добавьте в конец строки символ "_".</li>
+            </ol>
+            Указанные файлы должны быть автоматически созданы программой в папке "processed", которая также должна быть создана
+            в результате работы программы (не вручную). Файл с исходными строками создаётся вручную и может лежать в
+            любом удобном Вам месте.
+        </li>
+    </ol>
+</main>
+</body>
+</html>
