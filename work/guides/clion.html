@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../../basecss/base.css"/>
+    <title>Инструкция по установке CLion</title>
+</head>
+<body>
+<main>
+    <h1>Инструкция по установке CLion</h1>
+        <h2>
+            Получение студенческой лицензии и скачивание дистрибутива
+        </h2>
+    <ol>
+        <li>
+            <p>
+                Переходим по <a href="https://www.jetbrains.com/shop/eform/students">ссылке</a>,
+                подаём заявку через физтеховскую почту в домене phystech.edu. Таким образом получаем
+                аккаунт на jetbrains.com со студенческой лицензией на их продукты.
+            </p>
+        </li>
+        <li>
+            <p>
+                Далее авторизуемся на сайте <a href="https://account.jetbrains.com/login">здесь</a>.
+                Попадаем на следующую страницу:
+            </p>
+            <img src="../images/clioninstr_1.png" alt="Список доступных продуктов JetBrains">
+        </li>
+        <li>
+            <p>Кликаем мышкой на &laquo;Download&raquo; и скачиваем CLion:</p>
+            <img src="../images/clioninstr_2.png" alt="Ссылка на скачивание CLion-а">
+            <p>
+                Запускаем .exe-шник, устанавливаем в выбранную папочку.
+            </p>
+        </li>
+    </ol>
+    <h2>
+        Установка компилятора и подключение его к IDE.
+    </h2>
+    <ol>
+        <li>
+            <p>
+                В нашем курсе я рекомендую компилятор MinGW-GCC, собранный с дополнительными библиотеками
+                и установщиком одним из сотрудников Microsoft, который можно скачать по
+                <a href="https://nuwen.net/mingw.html">этой ссылке</a>. Там же внизу есть и инструкция на английском.
+                Если кратко, то запустите установщик и выберите папочку для установки (рекомендуется устанавливать
+                в корневой каталог диска C &mdash; там CLion обнаружит компилятор автоматически).
+            </p>
+        </li>
+        <li>
+            <p>
+                Запустив IDE, создайте новый проект. Придумайте для него название и задайте 17-й стандарт.
+                Как только проект загрузится, у вас появится специальное окошко, которое обнаружит MinGW у вас
+                на машине: в противном случае укажите ссылку на папку с компилятором (например, <code>
+                C:\MinGW
+            </code>) в поле Environment. Остальные поля должны загрузиться самостоятельно! Запустив программу (зелёный
+                треугольничек), наслаждайтесь тем, как она приветствует мир.
+            </p>
+        </li>
+    </ol>
+    <div class="row">
+        <img class="col-lg-4 col-md-6 col-sm-12" src="../images/clioninstr_3.png" alt="Создание нового проекта">
+        <img class="col-lg-4 col-md-6 col-sm-12" src="../images/clioninstr_4.png" alt="Добавление компилятора">
+        <img class="col-lg-4 col-md-6 col-sm-12" src="../images/clioninstr_5.png" alt="Запуск программы">
+    </div>
+</main>
+</body>
+</html>

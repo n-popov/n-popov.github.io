@@ -3,6 +3,11 @@ main {
     margin: auto;
     padding: 20px;
 }
+
+main.image {
+    max-width: 100%;
+}
+
 h1, h2 {
     text-align: center;
 }
