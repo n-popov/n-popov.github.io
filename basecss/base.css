@@ -1,5 +1,14 @@
 main {
-    padding: 10px;
-    margin: auto;
     max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+h1, h2 {
+    text-align: center;
+}
+h1 {
+    text-transform: uppercase;
+}
+p {
+    text-align: justify;
 }
