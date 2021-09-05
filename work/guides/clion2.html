@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../../basecss/base.css"/>
+    <title>Инструкция по использованию CLion, часть 1</title>
+</head>
+<body>
+<main>
+    <h1>Инструкция по использованию CLion, часть 1</h1>
+        <h2>
+            Запуск программы
+        </h2>
+    <p>
+        В CLion, как и в VS, мы работаем с проектом, который может состоять из одного или нескольких файлов.
+        Всё это компилируется в единый .exe-шник &mdash; поэтому в проекте не может быть более одной функции main().
+    </p>
+    <p>
+        Поначалу мы будем работать с однофайловым проектом. Таким образом, чтобы писать задачи, достаточно модифицировать
+        файл main.cpp.
+    </p>
+    <h2>
+        Как делать сразу несколько заданий в одном проекте?
+    </h2>
+    <p>
+        В CLion есть возможность запускать разные написанные нами программы из одного проекта. Для этого нужно открыть файл
+        CMakeLists.txt и модифицировать строчку add_executable(..), заменив main.cpp на название .cpp файла с программой,
+        которую мы хотим запустить.
+    </p>
+    <div class="row">
+        <img class="col-lg-6 col-sm-12" src="../images/clioninstr_6.png" alt="CMakeLists &mdash; main">
+        <img class="col-lg-6 col-sm-12" src="../images/clioninstr_7.png" alt="CMakeLists &mdash; another program">
+    </div>
+    <p>
+        Есть альтернативный вариант: добавить несколько строчек add_executable(..) и выбрать соответствующий вариант сверху
+        в выпадающем списке.
+    </p>
+    <img class="col-lg-12" src="../images/clioninstr_8.png" alt="Несколько исполняемых файлов">
+    <p>
+        Необходимо помнить о том, что количество функций main() в файлах, которые мы указываем
+        в одной строчке add_executable, должно быть строго равно единице!
+        Почему в C++ есть это правило? Дело в том, что функция main() является точкой входа в программу. Если её нет,
+        или, напротив, больше одной, выполнение программы не представляется возможным, так как в этом случае непонятно,
+        откуда же её нужно выполнять. Отсутствие функции main() влечёт за собой ошибку компиляции.
+    </p>
+</main>
+</body>
+</html>
