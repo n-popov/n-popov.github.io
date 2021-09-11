@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../../../basecss/base.css"/>
+
+    <title>Задание по второму семинару</title>
+</head>
+<body>
+<main>
+    <h2>Контрольные вопросы:</h2>
+    <ol>
+        <li>(8 б.) Что такое стек и куча в контексте модели памяти C++? Какие переменные хранятся на стеке / в куче?
+        <li>(8 б.) Каким образом связаны встроенные указатели и массивы?
+        <li>(8 б.) Почему низкоуровневая работа с памятью небезопасна?
+        <li>(8 б.) Какие конструкции языка C++ аналогичны следующим концепциям Python:
+        <code>list</code>, <code>list.append()</code>, <code>list.clear()</code>,
+        <code>for item in some_list</code>, <code>str</code>?
+        <li>(8 б.) Для чего нужен оператор delete? В чём разница между
+        операторами delete и delete[]?
+    </ol>
+    <h2>Упражнения:</h2>
+    <ol>
+        <li> <p> (25 б.) Тензор второго ранга &mdash; это линейный оператор, переводящий векторное пространство в себя. Если в
+        пространстве задан базис, то тензор может быть представлен в виде квадратной матрицы. Введите с клавиатуры
+        вектор и матричное представление тензора в некотором базисе и воздействуйте тензором на вектор. Выведите результат. </p>
+        <li> <p> (25 б.) Реализуйте функцию split() &mdash; аналог str.split() в Python. Она должна принимать строку
+        и возвращать вектор строк, разбитых по разделителю.<br>
+        Подсказка: воспользуйтесь методами строки
+        <a href="https://en.cppreference.com/w/cpp/string/basic_string/find">find()</a> и
+        <a href="https://en.cppreference.com/w/cpp/string/basic_string/substr">substr()</a>.
+        Посмотрите примеры в документации! </p>
+
+        <li> <p> (25 б.) Реализуйте алгоритм сортировки вставками массива чисел. Потренируйтесь использовать контейнер
+        std::vector без итераторов и функцию обмена std::swap. Псевдокод алгоритма можете посмотреть
+        <a href="https://en.wikipedia.org/wiki/Insertion_sort">здесь</a>. </p>
+
+        <li> <p> (25 б.) Реализуйте алгоритм бинарного поиска в отсортированном массиве чисел. Достаточно установить
+        факт наличия или отсутствия искомого числа в массиве. Потренируйтесь использовать контейнер
+        std::vector без итераторов и оптимизируйте цикл поиска. Псевдокод алгоритма можете посмотреть
+        <a href="https://en.wikipedia.org/wiki/Binary_search_algorithm">здесь</a>. </p>
+    </ol>
+</main>
+</body>
+</html>
