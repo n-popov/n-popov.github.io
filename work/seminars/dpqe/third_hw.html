@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../../../basecss/base.css"/>
+
+    <title>Задание по третьему семинару</title>
+</head>
+<body>
+<main>
+    <h2>Контрольные вопросы:</h2>
+    <ol>
+        <li>(6 б.) В чем заключается концепция встраивания вызовов функций?
+        <li>(6 б.) В каких случаях используется ключевое слово auto?
+        <li>(6 б.) Какие аргументы функции могут иметь значения по умолчанию?
+        <li>(6 б.) Что такое перегрузка функций?
+        <li>(6 б.) Как передать функцию в функцию? Как сохранить лямбда-функцию?
+        <li>(10 б.) Что такое ссылка? Чем отличается передача аргументов в функцию по ссылке и по значению?
+            Как принято передавать массивы и другие контейнеры в функции? Может ли ссылка быть константной? Что это означает?
+
+    </ol>
+    <h2>Упражнения:</h2>
+    <ol>
+        <li> <p> Реализуйте алгоритм вычисления заданного пользователем числа Фибоначчи, используя рекурсию.</p>
+        <li> <p> (25 б.) Реализуйте алгоритм сортировки слиянием массива чисел. Потренируйтесь использовать рекурсию и
+        не злоупотребляйте созданием вспомогательных массивов. Псевдокод алгоритма можете посмотреть здесь. </p>
+
+        <li> <p> (25 б.) Реализуйте алгоритм сортировки массива чисел по возрастанию и по убыванию, используя алгоритм
+        <a href="https://en.cppreference.com/w/cpp/algorithm/sort"><code>std::sort</code> из стандартной библиотеки</a>
+        и 2 лямбда-выражения для указания критериев сортировки массива. Посмотрите примеры в документации! </p>
+
+        <li> <p> (25 б.) Реализуйте функцию <code>calculate</code>, которая принимает два числа с плавающей точкой и лямбда-
+        выражение, и возвращает результат, вычисленный лямбда-выражением на основе переданных аргументов.
+        </p><p>
+        Например: <code>double result = calculate(1.23, 4.56, [](double x, double y) { return x + y; });</code>
+        В результате выполнения данного фрагмента кода в result должно получиться значение 5.79. Для работы с
+        лямбда-выражением используйте обертку на основе <code>std::function.</code> Создайте массив на основе контейнера
+        <code>std::vector</code>, в котором будут храниться различные лямбда-выражения, и организуйте цикл, в котором к
+        заданной паре чисел посредством функции <code>calculate</code> применяется каждое лямбда-выражение из массива.</p>
+    </ol>
+</main>
+</body>
+</html>
