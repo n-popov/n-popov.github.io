@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../../../basecss/base.css"/>
+
+    <title>Задание по шестому семинару</title>
+</head>
+<body>
+<main>
+    <h2>Контрольные вопросы:</h2>
+    <ol>
+        <li>(8 б.) Что такое rvalue-ссылка? Объясните своими словами. Как принять аргумент в функцию по rvalue-ссылке?
+        <li>(8 б.) Для чего нужно ключевое слово explicit? В каком случае его не рекомендуется использовать? Что
+        означает = delete; при объявлении метода?
+        <li>(8 б.) В каких случаях применяется функция std::move?
+        <li>(8 б.) Перечислите известные вам специальные функции-члены класса.
+        <li>(8 б.) Что такое глубокое и поверхностное копирование? Какой вид копирования осуществляется при:
+        <ol>
+            <li>Копировании std::vector и std::string в C++?</li>
+            <li>Копировании list в Python?</li>
+        </ol>
+
+    </ol>
+    <h2>Упражнения:</h2>
+    <ol>
+        <li> <p> (20 б.) Модифицируйте класс умного указателя из первой задачи прошлого задания. Реализуйте перемещающий
+            конструктор копирования взамен старого. Удостоверьтесь, что программа работает корректно: перемещение
+            происходит и в деструкторе ничего не ломается.
+        </li>
+        <li> <p> (80 б.) Спроектируйте и реализуйте класс, представляющий дроби и средства для работы с ними. В
+            качестве данных-членов должны выступать два числа, числитель и знаменатель. Для указания знака
+            дроби можно использовать знаковый целочисленный тип для представления числителя. Реализуйте операторы
+            ввода-вывода, сложения, вычитания, умножения, деления, сравнения, набор операторов присваивания.
+            Также дополнительно реализуйте операторы префиксного и постфиксного инкремента и декремента
+            как методы класса, их описание Вы можете посмотреть в этой
+            <a href="https://ravesli.com/urok-137-peregruzka-operatorov-inkrementa-i-dekrementa/">статье</a>.
+            Обязательно реализуйте
+            метод, выполняющую сокращение дроби и не забудьте вызывать ее после каждой операции.
+            Специальные функции-члены в данном классе реализовывать самостоятельно не нужно, Вам будет достаточно
+            версий, сгенерированных компилятором по умолчанию. Создайте необходимый набор конструкторов,
+            сделайте оператор приведения дроби к типу double. Грамотно используйте (или не используйте) explicit.
+            Добавьте геттеры. Не забудьте про разбиение кода на файлы.
+    </p>
+    </ol>
+</main>
+</body>
+</html>
