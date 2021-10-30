@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../../../basecss/base.css"/>
+
+    <title>Задание по восьмому семинару</title>
+</head>
+<body>
+<main>
+    <h2>Контрольные вопросы:</h2>
+    <ol>
+        <li>(10 б.) <p> Для чего нужны ключевые слова try, throw, catch, noexcept? Почему все исключения
+        в C++ унаследованы от std::exception? Как называется метод у std::exception и его потомков,
+        позволяющий получить информацию об ошибке? </p>
+        <li>(10 б.) <p> В каких случаях следует рассматривать применение исключений? Почему, вообще говоря,
+            их следует применять как можно реже? </p>
+        <li>(10 б.) <p> Что означает отсутствие транзакционности у блока try и к каким проблемам
+        это может привести? Как эти проблемы решены в языке Java? </p>
+        <li>(10 б.) <p> Какие действия следует предпринимать при взаимодействии с чужим кодом (встраивании, вызове),
+        выбрасывающим исключения? Назовите строго два варианта. Поясните, как осуществить выбор между ними. </p>
+
+    </ol>
+    <h2>Упражнения:</h2>
+    <ol>
+        <li> <p> (25 б.) Модифицируйте класс Дроби из позапрошлого задания, добавив обработку ошибки, связанной
+            с нулевым знаменателем. Используйте наиболее подходящее исключение из стандартных или разработайте своё
+            (удостоверьтесь, что оно ловится и обрабатывается точно так же, как и стандартные). Продемонстрируйте
+            работу кода в функции main. </p>
+        </li>
+        <li>
+            <p>
+                (75 б.) Разработайте класс Даты, хранящий месяц, год и день. Реализуйте один конструктор, принимающий
+                все три аргумента, а также геттеры полей. Добавьте оператор сравнения дат и оператор
+                потокового вывода. В конструкторе реализуйте проверку введённых данных на корректность.
+                Если потребуется, разработайте один или несколько классов исключений. Корректным считается
+                любой целочисленный год, в т.ч. отрицательный. Напоминалка: функция получения количества
+                дней в месяце в домашке уже фигурировала.
+            </p>
+        </li>
+    </ol>
+</main>
+</body>
+</html>
