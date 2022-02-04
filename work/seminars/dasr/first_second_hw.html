@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="../../../basecss/base.css"/>
+
+    <title>Первое задание</title>
+</head>
+<body>
+<main>
+<h2>Контрольные вопросы:</h2>
+<ol>
+  <li>
+    <p>
+      (15 б.) Назовите 4 принципа ООП, кратко прокомментируйте их.
+    </p>
+  </li>
+  <li>
+    <p>
+      (15 б.) Как применяются ключевые слова friend, public, private? Для чего нужны геттеры и сеттеры?
+    </p>
+  </li>
+  <li>
+    <p>
+      (15 б.) Решите тест по первой лекции на LMS. Киньте скрин.
+    </p>
+  </li>
+</ol>
+<h2>Упражнения:</h2>
+<ol>
+  <li>
+<p> (40 б.)
+  <pre>
+  КР 2021, 1-я
+  Задан следующий класс точки в трёхмерном пространстве:
+
+  class Point
+  {
+  protected:
+  double _x;
+  double _y;
+  double _z;
+
+  public:
+  Point(double x, double y, double z): _x(x), _y(y), _z(z) {
+  }
+
+  double x() const {
+  return _x;
+  }
+
+  double y() const {
+  return _y;
+  }
+
+  double z() const {
+  return _z;
+  }
+  };
+  Реализуйте класс, задающий сферу. Прототип класса:
+
+  class Sphere
+  {
+  public:
+  // Конструктор сферы с центром в точке center и радиусом r
+  Sphere(const Point& center, double r);
+
+  // Проверка, попадает ли заданная точка p в данную сферу.
+  // (Расстояния сравнивать с точностью 1e-6.)
+  bool covers(const Point& p) const;
+  };
+  Для тестирования можете использовать следующий базовый пример:
+
+
+  // Создаём сферу
+  Point center(10.0, 10.0, 10.0);
+  Sphere s(center, 0.5);
+
+  // Создаём пару тестовых точек
+  Point p1(10.1, 10.1, 10.1);
+  Point p2(2, 2, 2);
+
+  // Ожидаем, что первая точка внутри сферы
+  cout << boolalpha << s.covers(p1) << endl;
+  // Ожидаем, что вторая точка не попала внутрь сферы
+  cout << boolalpha << s.covers(p2) << endl;
+  Данный пример должен вывести:
+
+  true
+  false
+  </pre>
+<li>
+  (3 * 15 б.) Решите задачи из контеста на LMS. Киньте скрины.
+</li>
+</ol>
+</main>
+</body>
+</html>
