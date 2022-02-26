@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="../../../basecss/base.css"/>
+
+    <title>Третье задание</title>
+</head>
+<body>
+<main>
+<h2>Контрольные вопросы:</h2>
+<ol>
+  <li>
+    <p>
+      (15 б.) Почему операторы ввода и вывода нельзя сделать методами класса?
+    </p>
+  </li>
+  <li>
+    <p>
+      (15 б.) Какие гетерогенные контейнеры вы знаете? Почему, строго говоря, они не
+      являются контейнерами STL в привычном смысле этого слова? Какой из них является
+      элементом map и unordered_map?
+    </p>
+  </li>
+  <li>
+    <p>
+      (15 б.) Решите тест по четвёртой лекции на LMS. Киньте скрин.
+    </p>
+  </li>
+</ol>
+<h2>Упражнения:</h2>
+<ol>
+  <li>
+<p> (45 б.)
+  <pre>
+  КР 2021, 2-я
+  Копилка
+  Реализуйте класс, описывающий копилку. Прототип класса:
+
+  class MoneyBox {
+  public:
+      // Конструктор и деструктор, если нужны
+
+      // Добавить монетку достоинством value
+      void addCoin(unsigned int value);
+
+      // Получить текущее количество монеток в копилке
+      unsigned int getCoinsNumber() const;
+
+      // Получить текущее общее достоинство всех монеток
+      unsigned int getCoinsValue() const;
+  };
+  Для тестирования можете использовать следующий базовый пример:
+
+
+      MoneyBox m;
+      // Добавили монетку достоинством 10
+      m.addCoin(10);
+      // Добавили монетку достоинством 5
+      m.addCoin(5);
+
+      // Ожидаем, что монеток внутри 2 штуки
+      cout << m.getCoinsNumber() << endl;
+      // Ожидаем, что общее достоинство всех монеток 15
+      cout << m.getCoinsValue() << endl;
+  Данный пример должен вывести:
+
+  2
+  15
+
+  </pre>
+<li>
+  (40 б.) Решите задачи из контеста на LMS. Киньте скрины.
+</li>
+</ol>
+</main>
+</body>
+</html>
