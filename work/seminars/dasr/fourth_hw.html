@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../../../basecss/base.css"/>
+
+    <title>Задание по седьмому семинару</title>
+</head>
+<body>
+<main>
+    <h2>Контрольные вопросы</h2>
+    <ol>
+        <li> (15 б.) Каким образом можно распараллелить часть программы? Как получить результат,
+        вычисленный в другом потоке, если известно, что
+            возвращаемое значение функции (return ...) игнорируется?</li>
+    </ol>
+    <h2>Упражнения:</h2>
+    <ol>
+        <li>
+            <p>
+                (50 б.) Рассмотрите
+                <a href="https://github.com/n-popov/dasr_sixth_sem/blob/master/accumulate.cpp">
+                    параллельную реализацию алгоритма accumulate.</a>
+                Реализуйте 15-ю и 50-ю строчку кода (помечены словом TODO), чтобы
+                алгоритм заработал. (Если не сделали это к прошлому семинару).
+                Добавьте возможность распараллеливания на N потоков, где N передаётся
+                как ещё один аргумент функции.
+            </p>
+        </li>
+
+        <li>
+            <p>
+                (35 б.) Выполните тест и задания по 6-й лекции на ЛМС (Последнее задание &mdash не обязательно).
+            </p>
+        </li>
+
+        <li>
+            <p>
+                (30 б.) Добавьте
+                <a href="https://github.com/n-popov/dasr_seventh_sem/blob/master/main.cpp">
+                    таймеру</a>
+                возможность приостанавливать и возобновлять замер времени. Вам, скорее всего,
+                потребуется поле типа std::chrono::steady_clock::duration для хранения замеренного времени.
+                .
+            </p>
+        </li>
+    </ol>
+</main>
+</body>
+</html>
