@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../../../basecss/base.css"/>
+
+    <title>Задание по шестому семинару</title>
+</head>
+<body>
+<main>
+    <h2>Контрольные вопросы</h2>
+    <ol>
+        <li> (10 б.) Что такое состояние гонки в многопоточной программе и к чему оно может привести?</li>
+        <li> (10 б.) Что такое состояние тупика (deadlock) в многопоточной программе? В каком случае оно может возникнуть? </li>
+    </ol>
+    <h2>Упражнения:</h2>
+    <ol>
+        <li> (120 б.) Реализуйте параллельный алгоритм parallel_min на потоках, принимающий итераторы на начало и конец диапазона и возвращающий минимальное значение в данном диапазоне. (Не итератор, как std::min_element, а именно значение.) Распараллельте на аппаратное число потоков. Если размер диапазона достаточно мал, не распараллеливайте. Используйте общую переменную для сбора результатов, защитив её мьютексом.(Мьютекс можно сделать глобальным.) <br/> Могут возникнуть проблемы с возвращаемым типом, поэтому предлагаются подсказки:
+	<ul>
+		<li>
+			Можно использовать функцию decltype(переменная), чтобы узнать тип переменной.
+		</li>
+		<li>
+			Можно установить фукнции возвращаемый тип auto, если мы хотим, чтобы компилятор выяснил его самостоятельно по возвращаемому значению.
+		</li>
+	</ul>
+	</li>
+	<li> (110 б.) Решите задачу tracker (последнюю) из контрольной 2019 года. Воспользуйтесь заготовкой, которую мы написали в конце предыдущего семинара или сделайте с нуля.
+	</li>
+    </ol>
+</main>
+</body>
+</html>
