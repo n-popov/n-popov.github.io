@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:g="http://base.google.com/ns/1.0">
+   <entry>
+       <g:id>TV_123456</g:id>
+       <g:title>LG 22LB4510 - 22" LED TV - 1080p (FullHD)</g:title>
+       <g:description>Attractively styled and boasting stunning picture quality, the LG 22LB4510 - 22" LED TV - 1080p (FullHD) is an excellent television/monitor. </g:description>
+       <g:link>http://www.example.com/electronics/tv/22LB4510.html</g:link>
+       <g:image_link>http://images.example.com/TV_123456.png</g:image_link>
+       <g:condition>used</g:condition>
+       <g:availability>in stock</g:availability>
+       <g:price>159.00 RUB</g:price>
+       <g:rating>5.0</g:rating>
+       <g:brand>LG</g:brand>
+       <g:product_type>Consumer Electronics > TVs > Flat Panel TVs</g:product_type>
+   </entry>
+   
+   <entry>
+       <g:id>TV_789012</g:id>
+       <g:title>Samsung QN65Q9FN - 65" QLED Smart TV - 4K Ultra HD</g:title>
+       <g:description>The Samsung QN65Q9FN is a cutting-edge smart TV with a stunning 65" QLED display, offering breathtaking 4K Ultra HD resolution. Enjoy immersive viewing experiences and access to a world of online entertainment.</g:description>
+       <g:link>http://www.example.com/electronics/tv/QN65Q9FN.html</g:link>
+       <g:image_link>http://images.example.com/TV_789012.png</g:image_link>
+       <g:condition>new</g:condition>
+       <g:availability>out of stock</g:availability>
+       <g:price>2999.00 RUB</g:price>
+       <g:rating>4.8</g:rating>
+       <g:brand>Samsung</g:brand>
+       <g:product_type>Consumer Electronics > TVs > Smart TVs</g:product_type>
+   </entrie> <!-- Invalid closing tag: </entrie> instead of </entry> -->
+   
+   <entry>
+       <g:id>TV_345678</g:id>
+       <g:title>Sony XBR55A8H - 55" OLED TV - 4K Ultra HD</g:title>
+       <g:description>The Sony XBR55A8H is a premium OLED TV with a sleek design and outstanding 4K Ultra HD picture quality. Experience vibrant colors, deep blacks, and impressive contrast for a truly cinematic viewing experience.</g:description>
+       <g:link>http://www.example.com/electronics/tv/XBR55A8H.html</g:link>
+       <g:image_link>http://images.example.com/TV_345678.png</g:image_link>
+       <g:condition>new</g:condition>
+       <g:availability>in stock</g:availability>
+       <g:price>2499.00 RUB</g:price>
+       <g:rating>4.9</g:rating>
+       <g:brand>Sony</g:brand>
+       <g:product_type>Consumer Electronics > TVs > OLED TVs</g:product_type>
+   </entry>
+</feed>
